@@ -31,7 +31,7 @@ async function getData(){
 }
 
 var text = getData();
-
+console.log(text);
 // Array storing correct keystrokes and mistakes
 var missOrCorr = new Array(text.length);
 
