@@ -27,7 +27,7 @@ var text = texts[Math.floor(Math.random() * 3)]
 getData();
 async function getData(){
     const response = await fetch('texts.cvs');
-    const data = await response.text();
+    const data = await response.json();
     console.log(data);
 }
 
