@@ -30,8 +30,8 @@ async function getData(){
     return text;
 }
 
-var text = getData();
-console.log(text);
+var text = await getData();
+
 // Array storing correct keystrokes and mistakes
 var missOrCorr = new Array(text.length);
 
