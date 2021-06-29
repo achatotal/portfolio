@@ -1,0 +1,27 @@
+.title {
+    margin-top: 35px;
+    margin-left: 40px;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+}
+
+.menu {
+    width: 101%;
+    position: absolute;
+    left: -2px;
+}
+
+.menuButton {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+td a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    display: block;
+    padding: 50px;
+    padding-left: 20%;
+}

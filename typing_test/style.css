@@ -1,0 +1,66 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+.title {
+    margin-top: 55px;
+    margin-left: 100px;
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+}
+
+.infoBar {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 100px;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 0px;
+}
+
+#text {
+    margin-top: 0px;
+    font-size: 35px;
+    color: rgb(161, 161, 161);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#mistake{
+    padding-right: 25px;
+}
+
+#char {
+    padding-left: 25px;
+}
+
+#end{
+    margin-top: 0px;
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 100px;
+    color: white;
+    /*Make element unselectable*/
+    -webkit-user-select: none; /* Safari, Chrome */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE */
+    user-select: none; /* CSS3 */
+    transition: background-color, 1s;
+}
+
+/* Color palete*/
+#palete {
+    color: rgb(255, 174, 81);
+    color: rgb(255, 173, 118);
+}
+
+#restart{
+    margin-top: 0px;
+    cursor: pointer;
+    margin-left: 100px;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+}
+
+#restart:hover {
+    color: rgb(105,150,255);
+}
