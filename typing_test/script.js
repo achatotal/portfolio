@@ -28,7 +28,8 @@ getData();
 async function getData(){
     const response = await fetch('texts.cvs');
     const data = await response.json();
-    text = data[Math.floor(Math.random() * 4)].text;
+    text = data[Math.floor(Math.random() * 4)].t;
+    console.log(text);
     console.log(data);
 }
 
