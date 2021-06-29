@@ -17,20 +17,30 @@ var end = false;
 var t0 = 0;
 var t1 = 0;
 
-var texts = new Array(2);
-texts[0] = 'Proto také obstaral pro Terezu podnájem, do něhož musila odnést svůj těžký kufr. Chtěl nad ní bdít, chránit ji, těšit se její přítomností, ale necítil žádnou potřebu měnit způsob svého života. Nechtěl proto, aby se vědělo, že Tereza u něho spí. Společný spánek byl totiž corpus delicti lásky.';
-texts[1] = 'Pokud se týče ženevské Komise pro studium Mločí Otázky, vykonala velikou a záslužnou práci hlavně tím, že se pečlivě vystříhala všech ožehavých politických i hospodářských otázek. Zasedala permanentně po dlouhou řadu let a konala přes třináct set schůzí, na nichž se pilně jednalo o mezinárodním sjednocení názvosloví pro Mloky.';
-texts[2] = 'Tiché kroky krysařovy ozvaly se a blížily. Horečka roztoužení nezachvěla však mladým tělem Agnes jako tolikrát; bezvládněji jen a rezignovaněji poddávala se neznámé tíze. A její oči nevzplály očekáváním: zíraly dále sklesle, bez naděje a víry, že by mohla kdy ustoupit noc.';
+var texts = [
+    {
+        "t": "Proto také obstaral pro Terezu podnájem, do něhož musila odnést svůj těžký kufr. Chtěl nad ní bdít, chránit ji, těšit se její přítomností, ale necítil žádnou potřebu měnit způsob svého života. Nechtěl proto, aby se vědělo, že Tereza u něho spí. Společný spánek byl totiž corpus delicti lásky.",
+        "autor": "Milan Kundera",
+        "dílo": "Nesnesitelná lechkost bytí"
+    },
+    {
+        "t": "Sotva jsi ještě pomyslel na to, jak se v posledním příkopě náležitě jak široký tak dlouhý natáhneš k spánku, zvlášť v kolenou, a s pláčem na krajíčku jsi ležel na zádech jako nemocný. Zamžikal jsi, když najednou některý z chlapců s lokty při bocích, s tmavými podrážkami skočil přes nás z náspu na silnici.",
+        "autor": "Franz Kafka",
+        "dílo": "Děti na silnici"
+    },
+    {
+        "t": "Vidím, že jsem teď náhle sám. Druzí, kteří musí stoupat po schodech, se při tom trochu unaví, s chvatně dýchajícími plícemi musí počkat, než jim otevřou dveře bytu, přitom mají proč být mrzutí a netrpěliví, vejdou pak do předsíně, kde pověsí klobouk, a teprve když projdou chodbou kolem několika skleněných dveří do svého pokoje, jsou sami.",
+        "autor": "Franz Kafka",
+        "dílo": "Obchodník"
+    },
+    {
+        "t": "Pokud se týče ženevské Komise pro studium Mločí Otázky, vykonala velikou a záslužnou práci hlavně tím, že se pečlivě vystříhala všech ožehavých politických i hospodářských otázek. Zasedala permanentně po dlouhou řadu let a konala přes třináct set schůzí, na nichž se pilně jednalo o mezinárodním sjednocení názvosloví pro Mloky.",
+        "autor": "Karel Čapek",
+        "dílo": "Válka s mloky"
+    }
+];
 
-
-async function getData(){
-    const response = await fetch('texts.cvs');
-    const data = await response.json();
-    text = data[Math.floor(Math.random() * 4)].t;
-    return text;
-}
-
-var text = await getData();
+var text = texts[Math.floor(Math.random() * 4)].t;
 
 // Array storing correct keystrokes and mistakes
 var missOrCorr = new Array(text.length);
