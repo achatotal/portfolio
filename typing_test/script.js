@@ -22,12 +22,11 @@ texts[0] = 'Proto také obstaral pro Terezu podnájem, do něhož musila odnést
 texts[1] = 'Pokud se týče ženevské Komise pro studium Mločí Otázky, vykonala velikou a záslužnou práci hlavně tím, že se pečlivě vystříhala všech ožehavých politických i hospodářských otázek. Zasedala permanentně po dlouhou řadu let a konala přes třináct set schůzí, na nichž se pilně jednalo o mezinárodním sjednocení názvosloví pro Mloky.';
 texts[2] = 'Tiché kroky krysařovy ozvaly se a blížily. Horečka roztoužení nezachvěla však mladým tělem Agnes jako tolikrát; bezvládněji jen a rezignovaněji poddávala se neznámé tíze. A její oči nevzplály očekáváním: zíraly dále sklesle, bez naděje a víry, že by mohla kdy ustoupit noc.';
 
-var text = texts[Math.floor(Math.random() * 3)]
-
 getData();
 async function getData(){
     const response = await fetch('texts.cvs');
     const data = await response.json();
+    text = data[Math.floor(Math.random() * 4)].text;
     console.log(data);
 }
 
