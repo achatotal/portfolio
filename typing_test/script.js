@@ -172,23 +172,5 @@ function createText(){
 };
 
 function restart(){
-    chars = 0;
-    mistakes = 0; 
-    correct = 0;
-    end = false;
-    t0 = 0;
-    t1 = 0;
-
-    document.getElementById('mistake').innerHTML = 0;
-    document.getElementById('correct').innerHTML = 0;
-    document.getElementById('speed').innerHTML = '–';
-    document.getElementById('end').style.color = 'white'
-
-    // Remove old text
-    for (var i = 0; i < text.length; i++){
-        document.getElementById(`${i}`).remove();
-    }
-
-    createText();
-
+    location = window.location;
 }
