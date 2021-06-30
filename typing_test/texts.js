@@ -20,5 +20,4 @@ var texts = [
         "dílo": "Válka s mloky"
     }
 ];
-
 export {texts};
