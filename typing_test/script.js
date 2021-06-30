@@ -19,7 +19,9 @@ var end = false;
 var t0 = 0;
 var t1 = 0;
 
-var text = texts[Math.floor(Math.random() * texts.length)].t;
+const randomNu = Math.floor(Math.random() * texts.length);
+
+var text = texts[randomNu].t;
 
 // Array storing correct keystrokes and mistakes
 var missOrCorr = new Array(text.length);
@@ -131,8 +133,8 @@ document.addEventListener('keydown', event => {
     // When writing is finished show conclusion message
     if(chars === text.length && end === false){
         document.getElementById('end').style.color = 'black';
-        document.getElementById('author').innerHTML = text.author;
-        document.getElementById('work').innerHTML = text.work;
+        document.getElementById('author').innerHTML = texts[randomNu].author;
+        document.getElementById('work').innerHTML = texts[randomNu].work;
         end = true;
     }
 });
