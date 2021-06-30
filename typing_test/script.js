@@ -133,8 +133,7 @@ document.addEventListener('keydown', event => {
     // When writing is finished show conclusion message
     if(chars === text.length && end === false){
         document.getElementById('end').style.color = 'black';
-        document.getElementById('author').innerHTML = texts[randomNu].author;
-        document.getElementById('work').innerHTML = texts[randomNu].work;
+        document.getElementById('author').innerHTML = `${texts[randomNu].author}/${texts[randomNu].work}`;
         end = true;
     }
 });
