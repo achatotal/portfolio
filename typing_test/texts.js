@@ -15,6 +15,16 @@ var texts = [
         "work": "Obchodník"
     },
     {
+        "t": "Od těla utéci nemohu, ani ho od sebe zahnati nemohu, ale musím je tepati, neb jest přivázáno, a zabíti ho nesluší, živiti je musím; a když je vypasu, že ztuční, tehdy svého nepřítele proti sobě krmím; neb jak dosti jí a pije, tak se proti mně vzbouří, a jeho síla a zdraví mně se protiví.",
+        "author": "Jan Hus",
+        "work": "Dcerka"
+    },
+    {
+        "t": "Měsíc zmizel z noční oblohy a později se znovu objevil, ale podstatně menší. Zůstával jsem v lese. Tehdy už jsem všechno jasně rozeznával a má mysl se denně obohacovala novými vjemy. Oči přivykly světlu a naučily se vnímat předměty v jejich správných tvarech. Už jsem rozlišoval hmyz od rostlin a postupně také jednotlivé rostliny. Zjistil jsem, že vrabec vydává pouze nepříjemné zvuky, zatímco trylky kosa a drozda jsou sladké a vábivé.",
+        "author": "Mary Shelleyová",
+        "work": "Frankenstein"
+    },
+    {
         "t": "Pokud se týče ženevské Komise pro studium Mločí Otázky, vykonala velikou a záslužnou práci hlavně tím, že se pečlivě vystříhala všech ožehavých politických i hospodářských otázek. Zasedala permanentně po dlouhou řadu let a konala přes třináct set schůzí, na nichž se pilně jednalo o mezinárodním sjednocení názvosloví pro Mloky.",
         "author": "Karel Čapek",
         "work": "Válka s mloky"
