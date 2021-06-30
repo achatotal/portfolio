@@ -11,12 +11,12 @@ var texts = [
     },
     {
         "t": "Vidím, že jsem teď náhle sám. Druzí, kteří musí stoupat po schodech, se při tom trochu unaví, s chvatně dýchajícími plícemi musí počkat, než jim otevřou dveře bytu, přitom mají proč být mrzutí a netrpěliví, vejdou pak do předsíně, kde pověsí klobouk, a teprve když projdou chodbou kolem několika skleněných dveří do svého pokoje, jsou sami.",
-        "autor": "Franz Kafka",
+        "author": "Franz Kafka",
         "work": "Obchodník"
     },
     {
         "t": "Pokud se týče ženevské Komise pro studium Mločí Otázky, vykonala velikou a záslužnou práci hlavně tím, že se pečlivě vystříhala všech ožehavých politických i hospodářských otázek. Zasedala permanentně po dlouhou řadu let a konala přes třináct set schůzí, na nichž se pilně jednalo o mezinárodním sjednocení názvosloví pro Mloky.",
-        "autor": "Karel Čapek",
+        "author": "Karel Čapek",
         "work": "Válka s mloky"
     }
 ];
