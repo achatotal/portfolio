@@ -19,7 +19,7 @@ var end = false;
 var t0 = 0;
 var t1 = 0;
 
-var text = texts[Math.floor(Math.random() * 4)].t;
+var text = texts[Math.floor(Math.random() * texts.length)].t;
 
 // Array storing correct keystrokes and mistakes
 var missOrCorr = new Array(text.length);
