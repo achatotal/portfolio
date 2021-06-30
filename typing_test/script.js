@@ -131,6 +131,8 @@ document.addEventListener('keydown', event => {
     // When writing is finished show conclusion message
     if(chars === text.length && end === false){
         document.getElementById('end').style.color = 'black';
+        document.getElementById('author').innerHTML = text.author;
+        document.getElementById('work').innerHTML = text.work;
         end = true;
     }
 });
