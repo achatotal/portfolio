@@ -43,6 +43,7 @@ document.addEventListener('keydown', event => {
         t0 = performance.now();
     }
 
+    var lastChar;
     var currentChar;
     var nextChar;
 
@@ -50,9 +51,7 @@ document.addEventListener('keydown', event => {
     var letters = 'aábcčdďeéěfghchiíjklmnňoópqrřsštťuúůvwyýxzž,.-!? )¨§´=+;"":';
 
     // Last char, current char and next char
-    if (chars != 0){
-        lastChar = document.getElementById(`${chars-1}`);
-    }
+    lastChar = document.getElementById(`${chars-1}`);
     currentChar = document.getElementById(`${chars}`);
     nextChar = document.getElementById(`${chars+1}`);
 
