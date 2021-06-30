@@ -1,4 +1,4 @@
-import {texts} from './texts.js';
+import { texts } from './texts.js';
 
 //Variable that stores index current char
 var chars = 0;
