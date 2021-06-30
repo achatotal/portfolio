@@ -50,7 +50,9 @@ document.addEventListener('keydown', event => {
     var letters = 'aábcčdďeéěfghchiíjklmnňoópqrřsštťuúůvwyýxzž,.-!? )¨§´=+;"":';
 
     // Last char, current char and next char
-    lastChar = document.getElementById(`${chars-1}`);
+    if (chars != 0){
+        lastChar = document.getElementById(`${chars-1}`);
+    }
     currentChar = document.getElementById(`${chars}`);
     nextChar = document.getElementById(`${chars+1}`);
 
