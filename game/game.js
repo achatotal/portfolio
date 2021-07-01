@@ -5,9 +5,9 @@ canvas.height = window.innerHeight;
 
 var y = 100;
 var x = 100;
-var rgb = `rgb${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))}`;
 
 document.addEventListener('DOMContentLoaded', function(){
+    document.getElementById('canvas1').style.backgroundColor = randomColor();
     circle();
 });
 
@@ -15,7 +15,6 @@ document.addEventListener('keydown', event =>{
 
     const distance = 15;
 
-    console.log(event.key);
     if(event.key === 'ArrowUp'){
         y -= distance;
         circle();
@@ -35,7 +34,7 @@ document.addEventListener('keydown', event =>{
 });
 
 function circle(){
-    ctx.fillStyle = `rgb${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))}`;
+    ctx.fillStyle = randomColor();
     ctx.beginPath();
     ctx.arc(x, y, 50, 0, 2 * Math.PI);
     ctx.fill();
@@ -44,4 +43,8 @@ function circle(){
 function resize(){
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+}
+
+function randomColor(){
+    return `rgb(${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))})`;
 }
