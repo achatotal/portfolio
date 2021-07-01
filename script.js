@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
     const typingTest = document.getElementById('typingTest');
     typingTest.addEventListener('mouseover', function(){
-        this.style.background = 'red';
+        this.style.background = `rgb(${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))})`;
     });
     typingTest.addEventListener('mouseout', function(){
         this.style.background = 'none';
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const gameOfLife = document.getElementById('gameOfLife');
     gameOfLife.addEventListener('mouseover', function(){
-        this.style.background = 'green';
+        this.style.background = `rgb(${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))})`;
     });
     gameOfLife.addEventListener('mouseout', function(){
         this.style.background = 'none';
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const drawingGame = document.getElementById('drawingGame');
     drawingGame.addEventListener('mouseover', function(){
-        this.style.background = 'blue';
+        this.style.background = `rgb(${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))})`;
     });
     drawingGame.addEventListener('mouseout', function(){
         this.style.background = 'none';

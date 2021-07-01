@@ -3,8 +3,8 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-var y = 100;
-var x = 100;
+var y = Math.floor(Math.random() * 500);
+var x = Math.floor(Math.random() * 1000);
 
 document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('canvas1').style.backgroundColor = randomColor();
