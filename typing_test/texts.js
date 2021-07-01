@@ -25,6 +25,16 @@ var texts = [
         "work": "Frankenstein"
     },
     {
+        "t": "Viděl sem pak, že ne všickni, které postřelila, hned se káceli, některé poranila toliko, pochromila, oslepila, ohlušila neb omráčila. Někteří se po její ráně oduli jako puchýř, jiní uschli jako tříska, jiní se třásli jako osika etc., takže větší díl lidí poraněných s hnijícími a kyšícími oudy než zdravých chodilo.",
+        "author": "Jan Amos Komenský",
+        "work": "Labyrint světa a ráj srdce"
+    },
+    {
+        "t": "Není pochyby, že měchatá veřejnost a baby obojího pohlaví lají podivuhodným kouzelníkům, kteří chodí v pustinách a na křižovatce točí kloboukem. Není pochyby, že těmto lidem jest utíkati, kdykoliv je někdo honí, že se neobracejí a že jsou mdlí, když dojde na pěsti.",
+        "author": "Vladislav Vančura",
+        "work": "Rozmarné léto"
+    },
+    {
         "t": "Pokud se týče ženevské Komise pro studium Mločí Otázky, vykonala velikou a záslužnou práci hlavně tím, že se pečlivě vystříhala všech ožehavých politických i hospodářských otázek. Zasedala permanentně po dlouhou řadu let a konala přes třináct set schůzí, na nichž se pilně jednalo o mezinárodním sjednocení názvosloví pro Mloky.",
         "author": "Karel Čapek",
         "work": "Válka s mloky"
