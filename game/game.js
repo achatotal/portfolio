@@ -5,7 +5,7 @@ canvas.height = window.innerHeight;
 
 var y = 100;
 var x = 100;
-var rgb = 'rgb(255, 216, 218)'
+var rgb = `rgb${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))}`;
 
 document.addEventListener('DOMContentLoaded', function(){
     circle();
@@ -35,7 +35,7 @@ document.addEventListener('keydown', event =>{
 });
 
 function circle(){
-    ctx.fillStyle = "red";
+    ctx.fillStyle = `rgb${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))}`;
     ctx.beginPath();
     ctx.arc(x, y, 50, 0, 2 * Math.PI);
     ctx.fill();
