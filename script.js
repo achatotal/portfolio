@@ -22,4 +22,11 @@ document.addEventListener('DOMContentLoaded', function(){
     drawingGame.addEventListener('mouseout', function(){
         this.style.background = 'none';
     });
+    const books = document.getElementById('books');
+    books.addEventListener('mouseover', function(){
+        this.style.background = `rgb(${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))})`;
+    });
+    books.addEventListener('mouseout', function(){
+        this.style.background = 'none';
+    });
 });
