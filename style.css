@@ -28,9 +28,12 @@
     cursor: pointer;
 }
 
-td a {
+a {
     text-decoration: none;
     color: black;
+}
+
+td a {
     width: 100%;
     display: block;
     padding: 50px;

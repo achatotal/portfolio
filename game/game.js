@@ -6,6 +6,8 @@ canvas.height = window.innerHeight;
 var y = Math.floor(Math.random() * 500);
 var x = Math.floor(Math.random() * 1000);
 
+const randomNum = Math.floor(Math.random() * 150);
+
 document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('canvas1').style.backgroundColor = randomColor();
     circle();
@@ -36,7 +38,7 @@ document.addEventListener('keydown', event =>{
 function circle(){
     ctx.fillStyle = randomColor();
     ctx.beginPath();
-    ctx.arc(x, y, 50, 0, 2 * Math.PI);
+    ctx.arc(x, y, randomNum, 0, 2 * Math.PI);
     ctx.fill();
 }
 
