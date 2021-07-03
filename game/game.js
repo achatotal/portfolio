@@ -11,6 +11,15 @@ const randomNum = Math.floor(Math.random() * 150);
 document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('canvas1').style.backgroundColor = randomColor();
     circle();
+
+
+    const download = document.getElementById('download');
+    download.style.color = randomColor();
+
+    download.addEventListener('click', function(){
+        this.setAttribute('download', 'MintyPaper.png');
+        this.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
+    });
 });
 
 document.addEventListener('keydown', event =>{
