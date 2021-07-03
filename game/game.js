@@ -14,10 +14,9 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
     const download = document.getElementById('download');
-    download.style.color = randomColor();
 
     download.addEventListener('click', function(){
-        this.setAttribute('download', 'MintyPaper.png');
+        this.setAttribute('download', 'Drawing.png');
         this.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
     });
 });
