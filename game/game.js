@@ -15,6 +15,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const download = document.getElementById('download');
 
+    download.addEventListener('mouseover', function(){
+        this.style.color = randomColor();
+    });
+    download.addEventListener('mouseout', function(){
+        this.style.color = 'white';
+    })
+    
     download.addEventListener('click', function(){
         this.setAttribute('download', 'Drawing.png');
         this.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
