@@ -50,6 +50,7 @@ window.addEventListener('resize', () =>{
     table(ctx);
 })
 
+
 function table(ctx){
 
     

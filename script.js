@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function(){
     typingTest.addEventListener('mouseout', function(){
         this.style.background = 'none';
     });
-
     const gameOfLife = document.getElementById('gameOfLife');
     gameOfLife.addEventListener('mouseover', function(){
         this.style.background = `rgb(${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))})`;
@@ -22,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function(){
     drawingGame.addEventListener('mouseout', function(){
         this.style.background = 'none';
     });
+
     const books = document.getElementById('books');
     books.addEventListener('mouseover', function(){
         this.style.background = `rgb(${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))})`;
@@ -29,4 +29,12 @@ document.addEventListener('DOMContentLoaded', function(){
     books.addEventListener('mouseout', function(){
         this.style.background = 'none';
     });
+
+    const anthropocene = document.getElementById('anthropocene');
+    anthropocene.addEventListener('mouseover', function(){
+        this.style.background = `rgb(${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))})`;
+    });
+    anthropocene.addEventListener('mouseout', function(){
+        this.style.background = 'none';
+    }); 
 });
