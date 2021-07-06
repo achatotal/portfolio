@@ -16,6 +16,8 @@ for(let r = 0; r < rows; r++){
 }
 
 var eraser = false;
+var brush = false;
+var pointer = false;
 
 var mouseUp = true;
 
@@ -44,9 +46,13 @@ window.addEventListener('load', () =>{
 
     table(ctx);
 
-    document.getElementById('eraser').addEventListener('click', function(){
-        eraserTool();
-    });
+    // Pointer button
+    document.getElementById('pointer').addEventListener('click', pointerButton);
+
+    // Brush button
+    document.getElementById('brush').addEventListener('click', brushEfect);
+
+    document.getElementById('eraser').addEventListener('click', eraserTool);
 
     document.addEventListener('keydown', event => {
         if(event.key === 'n'){
@@ -143,16 +149,40 @@ document.addEventListener('keydown', event => {
     if(event.key === 'e'){
         eraserTool();
     }
+    else if(event.key === 'b'){
+        brushEfect();
+    }
+    else if(event.key === 'p'){
+        pointerButton();
+    }
 
 })
 
+function pointerButton(){
+    deactivateTools();
+    pointer = true;
+    document.getElementById('pointer').style.color = 'rgb(170, 170, 170)';
+}
+
+function brushEfect(){
+    deactivateTools();
+    brush = true;
+    document.getElementById('brush').style.color = 'rgb(170, 170, 170)';
+}
+
 function eraserTool(){
-    if(eraser === false){
-        eraser = true;
-    }
-    else{
-        eraser = false;
-    }
+    deactivateTools();
+    eraser = true;
+    document.getElementById('eraser').style.color = 'rgb(170, 170, 170)';
+}
+
+function deactivateTools(){
+    brush = false;
+    eraser = false;
+    pointer = false;
+    document.getElementById('brush').style.color = 'black';
+    document.getElementById('eraser').style.color = 'black';
+    document.getElementById('pointer').style.color = 'black';
 }
 
 // create new generation of cells
