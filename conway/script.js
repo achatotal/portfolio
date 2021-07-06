@@ -1,11 +1,14 @@
 const rows = 52;
-const cellInRow = 106;
+const cellInRow = 110;
 const cells = rows*cellInRow;
 
-let Binarytable = new Array(rows);
-for (var i = 0; i <= rows; i++) {
+// let storing table with cells
+let Binarytable = new Array(rows-1);
+
+for (var i = 0; i < rows; i++) {
     Binarytable[i] = new Array(cellInRow);
 }
+
 for(let r = 0; r < rows; r++){
     for (let c = 0; c < cellInRow; c++){
         Binarytable[r][c] = false;
@@ -17,17 +20,22 @@ var eraser = false;
 var mouseUp = true;
 
 window.addEventListener('load', () =>{
+
     const canvas = document.getElementById('canvas');
+
     canvas.addEventListener('mousedown', function(e) {
         mouseUp = false;
         getCursorPosition(canvas, e);
     });
+
     document.addEventListener('mouseup', function(){
         mouseUp = true;
     });
+
     canvas.addEventListener('mousemove', function(e){
         getCursorPosition(canvas, e);
     });
+
     const ctx = canvas.getContext('2d');
 
     // resizing
@@ -38,7 +46,13 @@ window.addEventListener('load', () =>{
 
     document.getElementById('eraser').addEventListener('click', function(){
         eraserTool();
-    })
+    });
+
+    document.addEventListener('keydown', event => {
+        if(event.key === 'n'){
+            newGeneration();
+        }
+    });
 });
 
 
@@ -50,9 +64,8 @@ window.addEventListener('resize', () =>{
     table(ctx);
 })
 
-
+// create table with cells
 function table(ctx){
-
     
     var row = 0;
     var whichCell = 0;
@@ -64,22 +77,28 @@ function table(ctx){
         if((cell%cellInRow) === 0 && cell != 0){
             row = rows-((cells-cell)/cellInRow);
         }
+
         // Count cellinrow
         if(cell%cellInRow === 0 && row != 0){
             whichCell = 0;
         }
+
         else if(cell%cellInRow === 1 || cell === 1){
             beg = 11;
         }
+
         if(Binarytable[Math.floor(rows-((cells-cell)/cellInRow))][cell%cellInRow] === true){
             ctx.fillStyle = 'black';
         }
+
         else{
             ctx.fillStyle = 'white';
         }
+
         if(whichCell === 0){
             ctx.fillRect(0, 11*row, 10, 10);
         }
+
         else{
             ctx.fillRect((beg)*whichCell, 11*row, 10, 10);
 
@@ -124,4 +143,99 @@ function eraserTool(){
     else{
         eraser = false;
     }
+}
+
+// create new generation of cells
+function newGeneration() {
+    
+    let newTable = new Array(rows-1);
+
+    for (var i = 0; i < rows; i++) {
+        newTable[i] = new Array(cellInRow);
+    }
+
+    
+    for(let r = 0; r < rows; r++){
+        for (let c = 0; c < cellInRow; c++){
+            newTable[r][c] = false;
+        }
+    }
+
+    neighbor = 0;
+
+    for (var row = 0; row < rows; row++){
+        for (var cell = 0; cell < cellInRow; cell++){
+
+            // left neighbor
+            if (cell != 0 && Binarytable[row][cell-1] != false){
+                neighbor += 1;
+            }
+
+            // left top neighbor
+            if  (cell != 0 && row != 0 && Binarytable[row-1][cell-1] != false){
+                neighbor += 1;
+            }
+
+            // top neighbor
+            if  (row != 0 && Binarytable[row-1][cell] != false){
+                neighbor += 1;
+            }
+            
+            // top right neighbor
+            if  (cell != cellInRow-1 && row != 0 && Binarytable[row-1][cell+1] != false){
+                neighbor += 1;
+            }
+            // right neighbor
+            if  (cell != cellInRow-1 && Binarytable[row][cell+1] != false){
+                neighbor += 1;
+            }
+
+            // bottom right neighbor
+            if  (cell != cellInRow-1 && row != rows-1 && Binarytable[row+1][cell+1] != false){
+                neighbor += 1;
+            }
+
+            // bottom neighbor
+            if  (row != rows-1 && Binarytable[row+1][cell] != false){
+                neighbor += 1;
+            }
+
+            // bottom left neighbor
+            if  (cell != 0 && row != rows-1 && Binarytable[row+1][cell-1] != false){
+                neighbor += 1;
+            }
+
+            // Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.
+            if (neighbor < 2 && Binarytable[row][cell] != false){
+                newTable[row][cell] = false;
+            }
+
+            // Any live cell with more than three live neighbours dies, as if by overcrowding.
+            if (neighbor > 3){
+                newTable[row][cell] = false;
+            }    
+
+            // Any live cell with two or three live neighbours lives on to the next generation.
+            if (neighbor >= 2 && neighbor <= 3 && Binarytable[row][cell] != false){
+                newTable[row][cell] = true;
+            }
+
+            // Any dead cell with exactly three live neighbours becomes a live cell.
+            if (neighbor == 3 && Binarytable[row][cell] == false){
+                newTable[row][cell] = true;
+            }
+
+            neighbor = 0;
+        }
+    }
+
+    for (row = 0; row < rows; row++){
+        for (cell = 0; cell < cellInRow; cell++){
+            Binarytable[row][cell] = newTable[row][cell];
+        }
+    }
+
+    const ctx = canvas.getContext('2d');
+    table(ctx);
+
 }

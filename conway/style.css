@@ -23,3 +23,12 @@ body {
     display: block;
     padding: 1px;
 }
+
+.brushes {
+    top: 110px;
+    right: 30px;
+    position: absolute;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
