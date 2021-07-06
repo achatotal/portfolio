@@ -289,3 +289,15 @@ function clean(){
     
     table(ctx)
 }
+
+function sum(){
+    var s = 0
+    for(let r = 0; r < rows; r++){
+        for (let c = 0; c < cellInRow; c++){
+            if (Binarytable[r][c] == true){
+                return s+1;
+            }
+        }
+    }
+    return s;
+}
