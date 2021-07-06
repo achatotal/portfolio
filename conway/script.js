@@ -53,6 +53,16 @@ window.addEventListener('load', () =>{
             newGeneration();
         }
     });
+
+    // New generation button
+    document.getElementById('newGeneration').addEventListener('click', newGeneration);
+
+    // Play button
+    document.getElementById('play').addEventListener('click', play);
+
+    // Clean button
+    document.getElementById('clean').addEventListener('click', clean);
+
 });
 
 
@@ -236,6 +246,46 @@ function newGeneration() {
     }
 
     const ctx = canvas.getContext('2d');
+
     table(ctx);
 
+}
+
+interval = null;
+
+// Generate generations repeatedly
+function play() {
+
+    newGeneration();
+    if (document.getElementById( "hidElem" ).value == 'f'){
+        document.getElementById('play').innerHTML = 'stop'
+        document.getElementById( "hidElem" ).value = 't';
+        var i = 0;
+        interval = setInterval(function () {
+            newGeneration();
+            if (sum() === 0) {
+                document.getElementById('play').innerHTML = 'play'
+                document.getElementById( "hidElem" ).value = 'f';
+                clearInterval(interval);
+            }
+        }, 100);
+    }
+    else {
+        document.getElementById('play').innerHTML = 'play'
+        document.getElementById( "hidElem" ).value = 'f';
+        clearInterval(interval);
+    }
+
+}
+
+function clean(){
+    for(let r = 0; r < rows; r++){
+        for (let c = 0; c < cellInRow; c++){
+            Binarytable[r][c] = false;
+        }
+    }
+
+    const ctx = canvas.getContext('2d');
+    
+    table(ctx)
 }
