@@ -69,6 +69,17 @@ window.addEventListener('load', () =>{
     // Clean button
     document.getElementById('clean').addEventListener('click', clean);
 
+    // change arrow picture on hover
+    var arrow = document.getElementById('arrow');
+
+    arrow.addEventListener('mouseover', function(){
+        this.setAttribute('src', 'design/arrow2.svg')
+    });
+
+    arrow.addEventListener('mouseout', function(){
+        this.setAttribute('src', 'design/arrow.svg')
+    });
+
 });
 
 
