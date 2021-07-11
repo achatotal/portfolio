@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
         restart();
     });
 
-
 });
 
 // Check if right key was pressed
