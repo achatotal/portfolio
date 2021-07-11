@@ -34,7 +34,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Restart button
     document.getElementById('restart').addEventListener('click', function() {
         restart();
-    })
+    });
+
+    document.getElementById('arrow').addEventListener('mousover', function(){
+        this.setAttribute("fill","rgb(105,150,255)");
+    });
 });
 
 // Check if right key was pressed

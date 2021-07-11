@@ -72,3 +72,10 @@ body {
     font-family: 'Merriweather', serif;
     margin-bottom: 0px;
 }
+
+#arrow {
+    padding-left: 20px;
+    height: 48px;
+    position: absolute;
+    color: blue;
+}
