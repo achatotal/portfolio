@@ -9,9 +9,9 @@ var x = Math.floor(Math.random() * 1000);
 const randomNum = Math.floor(Math.random() * 150);
 
 document.addEventListener('DOMContentLoaded', function(){
+
     document.getElementById('canvas1').style.backgroundColor = randomColor();
     circle();
-
 
     const download = document.getElementById('download');
 
@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function(){
         this.setAttribute('download', 'Drawing.png');
         this.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
     });
+
 });
 
 document.addEventListener('keydown', event =>{
