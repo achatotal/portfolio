@@ -56,5 +56,9 @@ document.addEventListener('DOMContentLoaded', function(){
         gameOfLife.style.backgroundImage = 'url("design/gameOfLife.gif")';
         gameOfLife.style.backgroundRepeat = 'no-repeat';
 
+
+        const drawingGame = document.getElementById('drawingGame');
+        drawingGame.style.backgroundImage = 'url("design/drawing.gif")';
+        drawingGame.style.backgroundRepeat = 'no-repeat';
     }
 });

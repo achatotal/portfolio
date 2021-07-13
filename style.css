@@ -1,6 +1,6 @@
 .title {
     margin-top: 20px;
-    margin-left: 27px;
+    margin-left: 33px;
     font-family: 'Merriweather', serif;
     font-size: 15px;
     position: absolute;
@@ -12,7 +12,7 @@
     font-size: 15px;
     right: 0;
     position: absolute;
-    padding-right: 40px;
+    padding-right: 15px;
 }
 
 .menu {
@@ -35,6 +35,6 @@ a {
 }
 
 a {
-    padding: 50px;
+    padding: 48px;
     padding-left: 20%;
 }
