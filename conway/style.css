@@ -1,3 +1,7 @@
+:root {
+    --f-primary: 'Montserrat', sans-serif;
+}
+
 body {
     font-size: 20px;
 }

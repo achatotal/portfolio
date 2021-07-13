@@ -1,11 +1,15 @@
+:root {
+    --f-primary: 'Montserrat', sans-serif;
+}
+
 body {
-    font-family: Helvetica, sans-serif;
+    font-family: var(--f-primary);
 }
 
 .title {
     margin-top: 55px;
     margin-left: 100px;
-    font-family: 'Merriweather', serif;
+    font-family: var(--f-primary);
     font-size: 40px;
 }
 
@@ -13,7 +17,7 @@ body {
     font-size: 20px;
     margin-top: 50px;
     margin-left: 100px;
-    font-family: 'Merriweather', serif;
+    font-family: var(--f-primary);
     margin-bottom: 0px;
 }
 
@@ -21,7 +25,7 @@ body {
     margin-top: 0px;
     margin-bottom: 30px;
     font-size: 35px;
-    font-family: 'Merriweather', serif;
+    font-family: var(--f-primary);
     color: rgb(161, 161, 161);
     margin-left: 100px;
     margin-right: 100px;
@@ -59,7 +63,7 @@ body {
     cursor: pointer;
     margin-left: 100px;
     font-size: 20px;
-    font-family: 'Merriweather', serif;
+    font-family: var(--f-primary);
 }
 
 #restart:hover {
@@ -70,7 +74,7 @@ body {
     font-size: 22px;
     margin-bottom: 30px;
     margin-left: 100px;
-    font-family: 'Merriweather', serif;
+    font-family: var(--f-primary);
     margin-bottom: 0px;
 }
 
