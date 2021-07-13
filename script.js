@@ -2,30 +2,35 @@ document.addEventListener('DOMContentLoaded', function(){
 
     // Change design If portfolio is viewed on ipad or phone
     if (window.innerWidth > 780){
+
+        // Typing Test
         const typingTest = document.getElementById('typingTest');
         typingTest.addEventListener('mouseover', function(){
-            this.style.background = `rgb(${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))})`;
+            this.style.backgroundImage = `url("design/bigDrawings/${(Math.floor(Math.random() * 1))}tt.png")`;
         });
         typingTest.addEventListener('mouseout', function(){
-            this.style.background = 'none';
+            this.style.backgroundImage = 'none';
         });
     
+        // Game of Life
         const gameOfLife = document.getElementById('gameOfLife');
         gameOfLife.addEventListener('mouseover', function(){
-            this.style.background = `rgb(${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))})`;
+            this.style.backgroundImage = `url("design/bigDrawings/${(Math.floor(Math.random() * 2))}gol.png")`;
         });
         gameOfLife.addEventListener('mouseout', function(){
-            this.style.background = 'none';
+            this.style.backgroundImage = 'none';
         });
     
+        // Drawing game
         const drawingGame = document.getElementById('drawingGame');
         drawingGame.addEventListener('mouseover', function(){
-            this.style.background = `rgb(${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))})`;
+            this.style.backgroundImage = `url("design/bigDrawings/${(Math.floor(Math.random() * 4))}.png")`;
         });
         drawingGame.addEventListener('mouseout', function(){
-            this.style.background = 'none';
+            this.style.backgroundImage = 'none';
         });
-    
+
+        // Books
         const books = document.getElementById('books');
         books.addEventListener('mouseover', function(){
             this.style.background = `rgb(${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))})`;
@@ -34,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function(){
             this.style.background = 'none';
         });
     
+        // Anthropocene
         const anthropocene = document.getElementById('anthropocene');
         anthropocene.addEventListener('mouseover', function(){
             this.style.background = `rgb(${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))},${(Math.floor(Math.random() * 255))})`;
