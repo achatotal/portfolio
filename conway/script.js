@@ -17,7 +17,6 @@ for(let r = 0; r < rows; r++){
 
 var eraser = false;
 var brush = false;
-var pointer = false;
 
 var mouseUp = true;
 
@@ -45,9 +44,6 @@ window.addEventListener('load', () =>{
     canvas.width = 10.991*cellInRow;
 
     table(ctx);
-
-    // Pointer button
-    document.getElementById('pointer').addEventListener('click', pointerButton);
 
     // Brush button
     document.getElementById('brush').addEventListener('click', brushEfect);
@@ -163,17 +159,8 @@ document.addEventListener('keydown', event => {
     else if(event.key === 'b'){
         brushEfect();
     }
-    else if(event.key === 'p'){
-        pointerButton();
-    }
 
 })
-
-function pointerButton(){
-    deactivateTools();
-    pointer = true;
-    document.getElementById('pointer').style.color = 'rgb(170, 170, 170)';
-}
 
 function brushEfect(){
     deactivateTools();
@@ -190,10 +177,8 @@ function eraserTool(){
 function deactivateTools(){
     brush = false;
     eraser = false;
-    pointer = false;
     document.getElementById('brush').style.color = 'black';
     document.getElementById('eraser').style.color = 'black';
-    document.getElementById('pointer').style.color = 'black';
 }
 
 // create new generation of cells

@@ -1,21 +1,22 @@
 .title {
-    margin-top: 35px;
-    margin-left: 40px;
+    margin-top: 20px;
+    margin-left: 27px;
     font-family: 'Merriweather', serif;
-    font-size: 20px;
+    font-size: 15px;
     position: absolute;
 }
 
 .cv {
-    margin-top: 35px;
+    margin-top: 20px;
     font-family: 'Merriweather', serif;
-    font-size: 20px;
+    font-size: 15px;
     right: 0;
     position: absolute;
-    padding-right: 50px;
+    padding-right: 40px;
 }
 
 .menu {
+    display: grid;
     margin-top: 80px;
     width: 101%;
     position: absolute;
@@ -33,9 +34,7 @@ a {
     color: black;
 }
 
-td a {
-    width: 100%;
-    display: block;
+a {
     padding: 50px;
     padding-left: 20%;
 }

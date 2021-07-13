@@ -2,24 +2,24 @@
 <html lang="en">
     <head>
         <title>Game of Life</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
         <script src="script.js"></script>
     </head>
     <body>
+
         <a href="../index.html"><img src="design/arrow.svg" id="arrow"></a>
-        <p class="title"><a class="h" href="index.html">Hra života</a></p>
+        
+        <p class="title h">Hra života</p>
+
         <canvas id="canvas"></canvas>
-        <table class="brushes">
-            <tr>
-                <td id="pointer" style="color: rgb(170, 170, 170)">pointer</td>
-            </tr>
-            <tr>
-                <td id="brush">štětec</td>
-            </tr>
-            <tr>
-                <td id="eraser">guma</td>
-            </tr>
-        </table>
+
+        <div class="brushes">
+            <p id="brush">štětec</p>
+            <p id="eraser">guma</p>
+        </div>
+
         <table class="buttons" class="bottomMenu">
             <tr>
                 <td class="button" id="newGeneration">nová generace</td>

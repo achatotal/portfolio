@@ -5,6 +5,7 @@
         <link href="style.css" rel="stylesheet">
         <script src="script.js"></script>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
@@ -14,43 +15,13 @@
         <p class="title">Andrej Kučera</p>
         <p class="cv"><a href="cv/index.html">CV</a></p>
 
-        <table class="menu">
-        <tr>
-            <tr>
-                <td id="anthropocene" class="menuButton">
-                    <a>
-                        Antropocén
-                    </a>
-                </td>
-            </tr>
-            <td id="typingTest" class="menuButton">
-                <a href="typing_test/index.html">
-                    Test rychlosti psaní
-                </a>
-            </td>
-        </tr>
-        <tr>
-            <td id="gameOfLife" class="menuButton">
-                <a href="conway/index.html">
-                    Hra života
-                </a>
-            </td>
-        </tr>
-        <tr>
-            <td id="drawingGame" class="menuButton">
-                <a href="game/index.html">
-                    Kreslící hra
-                </a>
-            </td>
-        </tr>
-        <tr>
-            <td id="books" class="menuButton">
-                <a href="books/index.html">
-                    Knihy
-                </a>
-            </td>
-        </tr>
-        </table>
+        <div class="menu">
+            <a id="anthropocene" class="menuButton">Antropocén</a>
+            <a id="typingTest" class="menuButton" href="typing_test/index.html">Test rychlosti psaní</a>
+            <a id="gameOfLife" class="menuButton" href="conway/index.html">Hra života</a>
+            <a href="game/index.html" id="drawingGame" class="menuButton">Kreslící hra</a>
+            <a href="books/index.html"  id="books" class="menuButton">Knihy</a>
+        </div>
 
     </body>
 </html>
