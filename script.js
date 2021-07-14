@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function(){
             this.style.background = 'none';
         });
 
-        anthropocene.style.display = 'none';
         books.style.display = 'none';
     
     }
