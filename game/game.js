@@ -59,7 +59,7 @@ if(window.innerWidth < 800) {
     document.addEventListener('click', function() {
         ctx.fillStyle = randomColor();
         ctx.beginPath();
-        ctx.arc(Math.floor(Math.random() * window.innerWidth), Math.floor(Math.random() * window.innerHeight), randomNum, 0, 2 * Math.PI);
+        ctx.arc(Math.floor(Math.random() * window.innerWidth), Math.floor(Math.random() * window.innerHeight), Math.floor(Math.random() * 90) + 20, 0, 2 * Math.PI);
         ctx.fill();
     })
 }
