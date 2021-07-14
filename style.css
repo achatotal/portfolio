@@ -27,7 +27,7 @@
     left: -2px;
 }
 
-.menuButton {
+.menu a {
     font-family: var(--f-primary);
     font-size: 1.5rem;
     cursor: pointer;

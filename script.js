@@ -11,6 +11,15 @@ document.addEventListener('DOMContentLoaded', function(){
         typingTest.addEventListener('mouseout', function(){
             this.style.backgroundImage = 'none';
         });
+
+        // Animace
+        const animace = document.getElementById('animace');
+        animace.addEventListener('mouseover', function(){
+            this.style.backgroundImage = `url("design/bigDrawings/${(Math.floor(Math.random() * 4))}a.png")`;
+        });
+        animace.addEventListener('mouseout', function(){
+            this.style.backgroundImage = 'none';
+        });
     
         // Game of Life
         const gameOfLife = document.getElementById('gameOfLife');
