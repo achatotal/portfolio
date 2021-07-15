@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function(){
         // Animace
         const animace = document.getElementById('animace');
         animace.addEventListener('mouseover', function(){
-            this.style.backgroundImage = `url("design/bigDrawings/${(Math.floor(Math.random() * 4))}a.png")`;
+            this.style.backgroundImage = `url("design/bigDrawings/animace.png")`;
         });
         animace.addEventListener('mouseout', function(){
             this.style.backgroundImage = 'none';
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function(){
         // Game of Life
         const gameOfLife = document.getElementById('gameOfLife');
         gameOfLife.addEventListener('mouseover', function(){
-            this.style.backgroundImage = `url("design/bigDrawings/${(Math.floor(Math.random() * 2))}gol.png")`;
+            this.style.backgroundImage = `url("design/bigDrawings/gameoflife.png")`;
         });
         gameOfLife.addEventListener('mouseout', function(){
             this.style.backgroundImage = 'none';
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function(){
         // Drawing game
         const drawingGame = document.getElementById('drawingGame');
         drawingGame.addEventListener('mouseover', function(){
-            this.style.backgroundImage = `url("design/bigDrawings/${(Math.floor(Math.random() * 4))}.png")`;
+            this.style.backgroundImage = 'url("design/bigDrawings/drawinggame.png")';
         });
         drawingGame.addEventListener('mouseout', function(){
             this.style.backgroundImage = 'none';
