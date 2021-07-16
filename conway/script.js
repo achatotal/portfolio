@@ -1,5 +1,5 @@
-const rows = 52;
-const cellInRow = 110;
+const rows = Math.floor(window.innerHeight/14);
+const cellInRow = Math.floor(window.innerWidth/14);
 const cells = rows*cellInRow;
 
 // let storing table with cells
