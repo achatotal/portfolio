@@ -56,8 +56,6 @@ document.addEventListener('DOMContentLoaded', function(){
         anthropocene.addEventListener('mouseout', function(){
             this.style.background = 'none';
         });
-
-        books.style.display = 'none';
     
     }
     else {
