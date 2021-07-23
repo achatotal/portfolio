@@ -51,7 +51,7 @@ a {
 
 
 #drawingGame:hover {
-    background-color: rgb(255, 221, 128);
+    background-color: rgb(255, 187, 60);
 }
 
 #books:hover {
@@ -59,7 +59,7 @@ a {
 }
 
 #animace:hover {
-    background-color: rgb(219, 140, 255);
+    background-color: rgb(161, 58, 209);
 }
 
 #gameOfLife:hover {
@@ -67,5 +67,5 @@ a {
 }
 
 #typingTest:hover {
-    background-color: rgb(195, 213, 255);
+    background-color: rgb(101, 116, 255);
 }
