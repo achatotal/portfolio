@@ -3,7 +3,7 @@
 }
 
 .title {
-    margin-top: 0.8rem;
+    margin-top: 1%;
     margin-left: 33px;
     font-family: var(--f-primary);
     font-size: 1.05rem;
@@ -16,13 +16,13 @@
     font-size: 1rem;
     right: 0;
     position: absolute;
-    padding-right: 15px;
+    padding-right: 3rem;
 }
 
 .menu {
     display: grid;
     grid-template-columns: auto auto auto;
-    margin-top: 3%;
+    margin-top: 6%;
     width: 94%;
     position: absolute;
     grid-gap: 2rem;
