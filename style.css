@@ -1,12 +1,12 @@
 :root {
-    --f-primary: 'Montserrat', sans-serif;
+    font-family: 'Merriweather', serif;
 }
 
 .title {
-    margin-top: 20px;
+    margin-top: 0.8rem;
     margin-left: 33px;
     font-family: var(--f-primary);
-    font-size: 1rem;
+    font-size: 1.05rem;
     position: absolute;
 }
 
@@ -21,25 +21,51 @@
 
 .menu {
     display: grid;
-    margin-top: 80px;
-    width: 101%;
+    grid-template-columns: auto auto auto;
+    margin-top: 3%;
+    width: 94%;
     position: absolute;
-    left: -2px;
+    grid-gap: 2rem;
+    left: 3%;
+ 
 }
 
 .menu a {
     font-family: var(--f-primary);
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     cursor: pointer;
     letter-spacing: 0.03rem;
 }
 
+
 a {
     text-decoration: none;
     color: black;
+    padding-top: 1rem;
+    padding-left: 1rem;
 }
 
-a {
-    padding: 60.5px;
-    padding-left: 20%;
+#anthropocene:hover {
+    background-color: rgb(151, 255, 220);
+}
+
+
+#drawingGame:hover {
+    background-color: rgb(255, 221, 128);
+}
+
+#books:hover {
+    background-color: rgb(255, 213, 221);
+}
+
+#animace:hover {
+    background-color: rgb(219, 140, 255);
+}
+
+#gameOfLife:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+#typingTest:hover {
+    background-color: rgb(195, 213, 255);
 }
