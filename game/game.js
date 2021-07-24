@@ -2,6 +2,7 @@ const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
+var mouseDown = false;
 
 var y = Math.floor(Math.random() * window.innerWidth);
 var x = Math.floor(Math.random() * window.innerHeight);
@@ -53,6 +54,24 @@ document.addEventListener('keydown', event =>{
     }
 });
 
+// 
+document.addEventListener('mousedown', function(){
+    mouseDown = true;
+})
+
+document.addEventListener('mouseup', function(){
+    mouseDown = false;
+})
+
+// draw with mouse
+document.addEventListener('mousemove', function(event){
+    if (mouseDown === true){
+        ctx.fillStyle = randomColor();
+        ctx.beginPath();
+        ctx.arc(event.clientX, event.clientY, randomNum, 0, 2 * Math.PI);
+        ctx.fill();
+    }
+})
 
 // Interact with phone
 if(window.innerWidth < 800) {
