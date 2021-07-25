@@ -7,11 +7,18 @@ var mouseDown = false;
 var y = Math.floor(Math.random() * window.innerWidth);
 var x = Math.floor(Math.random() * window.innerHeight);
 
-console.log()
-
 const randomNum = Math.floor(Math.random() * 90) + 20;
 
 document.addEventListener('DOMContentLoaded', function(){
+
+    document.getElementById('arrowA').addEventListener('mouseover', ()=>{
+        var color = randomColor();
+        document.getElementById('polygon').style.fill = color;
+    })
+
+    document.getElementById('arrowA').addEventListener('mouseout', ()=>{
+        document.getElementById('polygon').style.fill = 'white';
+    })
 
     document.getElementById('canvas1').style.backgroundColor = randomColor();
     circle();
