@@ -7,7 +7,7 @@ const randomGreen = `rgb(${(Math.floor(Math.random() * 50))},${(Math.floor(Math.
 
 document.addEventListener('DOMContentLoaded', function(){
 
-    document.getElementById('canvas1').style.backgroundColor = 'rgb(60, 46, 255)';
+    document.getElementById('canvas1').style.backgroundColor = `rgb(${(Math.floor(Math.random() * 40))},${(Math.floor(Math.random() * 80))},${(Math.floor(Math.random() * 205)+50)})`;
 
     document.addEventListener('mousemove', (event)=>{
         ctx.fillStyle = randomGreen;
