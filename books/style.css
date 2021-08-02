@@ -42,6 +42,7 @@ img {
 }
 
 .menuText {
+    font-family: var(--f-primary);
     margin-top: 0;
     font-size: 1.1rem;
     width: 25%;
