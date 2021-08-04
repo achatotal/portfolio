@@ -1,8 +1,12 @@
+:root {
+    --f-primary: 'Merriweather', serif;
+}
+
 .title {
-    margin-top: 35px;
-    margin-left: 40px;
-    font-family: 'Merriweather', serif;
-    font-size: 20px;
+    top: 0;
+    margin-left: 33px;
+    font-family: var(--f-primary);
+    font-size: 1.05rem;
     position: absolute;
 }
 
