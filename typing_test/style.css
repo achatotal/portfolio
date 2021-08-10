@@ -84,3 +84,7 @@ body {
     position: absolute;
     cursor: pointer;
 }
+
+#end {
+    font-family: 'Monsieur La Doulaise', cursive;
+}
