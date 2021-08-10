@@ -23,3 +23,12 @@ a {
     line-height: 2rem;
     margin-left: 20%;
 }
+
+@media only screen and (max-width: 930px) {
+    .text {
+        width: auto;
+        margin-top: 20%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
