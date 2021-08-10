@@ -43,9 +43,10 @@ document.addEventListener('DOMContentLoaded', function(){
             hideMenu();
             document.getElementById('text1').style.display = 'block';
             document.getElementById('menu1').style.top = '1rem';
-            document.body.scrollTop = saroyan.offsetTop-62;
-            document.documentElement.scrollTop = saroyan.offsetTop-62;
-
+            if (window.innerHeight > 779) {
+                document.body.scrollTop = saroyan.offsetTop-62;
+                document.documentElement.scrollTop = saroyan.offsetTop-62;
+            }
         }
         else {
             hideText()
@@ -61,8 +62,10 @@ document.addEventListener('DOMContentLoaded', function(){
             hideMenu();
             document.getElementById('text2').style.display = 'block';
             document.getElementById('menu2').style.top = '1rem';
-            document.body.scrollTop = bigBook.offsetTop-62;
-            document.documentElement.scrollTop = bigBook.offsetTop-62;
+            if (window.innerHeight > 779) {
+                document.body.scrollTop = bigBook.offsetTop-62;
+                document.documentElement.scrollTop = bigBook.offsetTop-62;
+            }
         }
         else {
             hideText()
@@ -78,8 +81,10 @@ document.addEventListener('DOMContentLoaded', function(){
             hideMenu();  
             document.getElementById('text3').style.display = 'block';
             document.getElementById('menu3').style.top = '1rem';
-            document.body.scrollTop = brezina.offsetTop-62;
-            document.documentElement.scrollTop = brezina.offsetTop-62;
+            if (window.innerHeight > 779) {
+                document.body.scrollTop = brezina.offsetTop-62;
+                document.documentElement.scrollTop = brezina.offsetTop-62;
+            }
         }
         else {
             hideText()
@@ -95,8 +100,10 @@ document.addEventListener('DOMContentLoaded', function(){
             hideMenu();
             document.getElementById('text4').style.display = 'block';
             document.getElementById('menu4').style.top = '1rem';
-            document.body.scrollTop = smallBook.offsetTop-62;
-            document.documentElement.scrollTop = smallBook.offsetTop-62;
+            if (window.innerHeight > 779) {
+                document.body.scrollTop = smallBook.offsetTop-62;
+                document.documentElement.scrollTop = smallBook.offsetTop-62;
+            }
         }
         else {
             hideText()

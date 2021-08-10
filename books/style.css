@@ -50,3 +50,19 @@ img {
     position: absolute;
     display: none;
 }
+
+@media only screen and (max-width: 930px) {
+    .menu {
+        position: static;
+    }
+
+    .menuText {
+        position: static;
+        width: auto;
+    }
+
+    img {
+            width: 100%;
+            margin-left: 0%;
+    }
+  }
