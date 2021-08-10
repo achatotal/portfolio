@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function(){
         if (true) {
             for(var i = 0; i < 1000; i++){
                 ctx.fillStyle = randomColor();
-                ctx.fillRect(Math.floor(Math.random() * window.innerWidth), Math.floor(Math.random() * window.innerWidth), 1, 1);
+                ctx.fillRect(Math.floor(Math.random() * window.innerWidth), Math.floor(Math.random() * window.innerHeight), 1, 1);
             }
         }
     },1);
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function(){
         if (true) {
             for(var i = 0; i < 100; i++){
                 ctx.fillStyle = 'rgb(13, 0, 201)';
-                ctx.fillRect(Math.floor(Math.random() * window.innerWidth), Math.floor(Math.random() * window.innerWidth), 1, 1);
+                ctx.fillRect(Math.floor(Math.random() * window.innerWidth), Math.floor(Math.random() * window.innerHeight), 1, 1);
             }
         }
     },10);
