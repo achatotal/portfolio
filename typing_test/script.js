@@ -1,9 +1,9 @@
 import { texts } from './texts.js';
 
-//Variable that stores index current char
+//Variable that stores index of current char
 var chars = 0;
 
-var mistakes = 0; 
+var mistakes = 0;
 var correct = 0;
 
 // Variables for colors

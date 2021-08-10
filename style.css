@@ -4,19 +4,19 @@
 
 .title {
     top: 0;
-    margin-left: 33px;
+    left: 3%;
     font-family: var(--f-primary);
     font-size: 1.05rem;
     position: absolute;
 }
 
 .cv {
-    margin-top: 20px;
+    top: 0;
     font-family: var(--f-primary);
     font-size: 1rem;
     right: 0;
     position: absolute;
-    padding-right: 3rem;
+    padding-right: 3%;
 }
 
 .menu {
@@ -27,7 +27,6 @@
     position: absolute;
     grid-gap: 2rem;
     left: 3%;
- 
 }
 
 .menu a {
@@ -37,7 +36,6 @@
     letter-spacing: 0.03rem;
 }
 
-
 a {
     text-decoration: none;
     color: black;
@@ -45,10 +43,14 @@ a {
     padding-left: 1rem;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 #anthropocene:hover {
     background-color: rgb(0, 236, 185);
 }
-
 
 #drawingGame:hover {
     background-color: rgb(255, 192, 74);
@@ -68,4 +70,19 @@ a {
 
 #typingTest:hover {
     background-color: rgb(42, 63, 245);
+}
+
+
+@media only screen and (max-width: 930px) {
+    .menu {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+  }
+
+@media only screen and (max-width: 780px) {
+    .menu {
+        display: grid;
+        grid-template-columns: auto;
+    }
 }

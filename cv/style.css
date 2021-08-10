@@ -14,3 +14,12 @@ a {
     text-decoration: none;
     color: black;
 }
+
+.text {
+    margin-top: 5%;
+    font-family: var(--f-primary);
+    font-size: 1.1rem;
+    width: 25%;
+    line-height: 2rem;
+    margin-left: 20%;
+}
